@@ -5,7 +5,7 @@ import { PDFDocument, PDFFont, PDFPage, rgb, StandardFonts } from "pdf-lib";
 import { readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 
-const SOURCE_PDF_PATH = "./Procuração UT PDF.pdf";
+const SOURCE_PDF_PATH = "./template.pdf";
 const PORT = Number(Bun.env.PORT ?? 3000);
 const REGULAR_FONT_PATHS = [
   "/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf",

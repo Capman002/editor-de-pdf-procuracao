@@ -15,6 +15,6 @@ ENV PORT=3000
 COPY --from=deps /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 COPY package.json server.ts ./
-COPY "Procuração UT PDF.pdf" ./
+COPY template.pdf ./
 EXPOSE 3000
 CMD ["bun", "run", "server.ts"]
