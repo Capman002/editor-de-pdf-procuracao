@@ -1,0 +1,28 @@
+{
+  "name": "editor-de-pdf",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch server.ts",
+    "dev:web": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "start": "bun run server.ts"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@types/bun": "latest",
+    "svelte": "^5.55.5",
+    "svelte-check": "^4.4.6",
+    "vite": "^8.0.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@elysiajs/static": "^1.4.10",
+    "@pdf-lib/fontkit": "^1.1.1",
+    "elysia": "^1.4.28",
+    "pdf-lib": "^1.17.1"
+  }
+}
