@@ -4,6 +4,6 @@ dist
 .gitignore
 README.md
 *.pdf
-!Procuração UT PDF.pdf
+!template.pdf
 *.png
 !app/public/govbr.png
